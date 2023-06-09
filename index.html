@@ -8,12 +8,16 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/fonts.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Manicure</title>
 </head>
 <body class="body">
-<div class="burger_menu burger_menu_active ">
+<div class="image_popup">
+    <img class="opened_image" src="assets/images/works/122.jpeg" alt="">
+</div>
+<div class="burger_menu ">
     <img class="closeIcon" src="assets/images/vector/closeIcon.svg" alt="closeIcon">
-    <h1 class="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum, adipiscing amet in egestas sem
+    <h1  class="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum, adipiscing amet in egestas sem
         dui, arcu faucibus scelerisque. Nisl est felis id volutpat. Sed dolor fermentum amet lectus nibh quis.
         Tortor donec pellentesque leo ac placerat. Morbi.</h1>
     <div class="contactsInfo">
@@ -32,9 +36,9 @@
     <div class="button_block">
         <img class="header_instagram" src="assets/images/vector/insta.svg" alt="instagram">
         <span>
-            <button class="header__button">Главная</button>
-            <button class="header__button">Мастера</button>
-            <button class="header__button">Контакты</button>
+            <button data-aos="fade-up" class="header__button">Главная</button>
+            <button data-aos="fade-up" class="header__button works_btn">Работы</button>
+            <button data-aos="fade-up" class="header__button contacts-btn">Контакты</button>
                 </span>
         <img class="header__logo" src="assets/images/vector/header_logo.svg" alt="headerLogo">
     </div>
@@ -42,8 +46,9 @@
 </header>
 <div class="background-overlay">
     <img src="assets/images/background.png" alt="lightRoom">
-    <h2>Салон красоты <br> «Delote-Beauty» <br>&nbspна Крестовском</h2>
+    <h2 >Салон красоты <br> «Delote-Beauty» <br>&nbspна Крестовском</h2>
 </div>
+
 <div class="wrapper">
     <section class="textSection">
         <img src="assets/images/vector/quotes.svg" alt="quotes">
@@ -58,21 +63,21 @@
     <section class="worksPlace">
         <h2>Наши работы</h2>
         <div class="works">
-            <img src="assets/images/works/122.jpeg" alt="manicure">
-            <img src="assets/images/works/7.jpeg" alt="manicure">
-            <img src="assets/images/works/legs3.jpeg" alt="manicure">
-            <img src="assets/images/works/8.jpeg" alt="manicure">
-            <img src="assets/images/works/123.jpeg" alt="manicure">
-            <img src="assets/images/works/9a77a3df-1de6-4a07-9ccc-16447d5be906.jpeg" alt="manicure">
-            <img src="assets/images/works/10.jpeg" alt="manicure">
-            <img src="assets/images/works/11.jpeg" alt="manicure">
-            <img src="assets/images/works/51a1cd2e-f2b3-487f-a758-96e389839491.jpeg" alt="manicure">
-            <img src="assets/images/works/113.jpeg" alt="manicure">
-            <img src="assets/images/works/legs5.jpeg" alt="manicure">
-            <img src="assets/images/works/a80c5298-57da-4c40-b558-33bedd1c38b7.jpeg" alt="manicure">
-            <img src="assets/images/works/c59d0a17-9453-4392-a089-5bd9ad122ff2.jpeg" alt="manicure">
-            <img src="assets/images/works/legs1.jpeg" alt="manicure">
-            <img src="assets/images/works/legs2.jpeg" alt="manicure">
+            <img class="work_image" data-aos="fade-up" src="assets/images/works/122.jpeg" alt="manicure">
+            <img class="work_image" data-aos="fade-up" src="assets/images/works/7.jpeg" alt="manicure">
+            <img class="work_image" data-aos="fade-up" src="assets/images/works/legs3.jpeg" alt="manicure">
+            <img class="work_image" data-aos="fade-up" src="assets/images/works/8.jpeg" alt="manicure">
+            <img class="work_image" data-aos="fade-up" src="assets/images/works/123.jpeg" alt="manicure">
+            <img class="work_image" data-aos="fade-up" src="assets/images/works/9a77a3df-1de6-4a07-9ccc-16447d5be906.jpeg" alt="manicure">
+            <img class="work_image" data-aos="fade-up" src="assets/images/works/10.jpeg" alt="manicure">
+            <img class="work_image" data-aos="fade-up" src="assets/images/works/11.jpeg" alt="manicure">
+            <img class="work_image" data-aos="fade-up" src="assets/images/works/51a1cd2e-f2b3-487f-a758-96e389839491.jpeg" alt="manicure">
+            <img class="work_image" data-aos="fade-up" src="assets/images/works/113.jpeg" alt="manicure">
+            <img class="work_image" data-aos="fade-up" src="assets/images/works/legs5.jpeg" alt="manicure">
+            <img class="work_image" data-aos="fade-up" src="assets/images/works/a80c5298-57da-4c40-b558-33bedd1c38b7.jpeg" alt="manicure">
+            <img class="work_image" data-aos="fade-up" src="assets/images/works/c59d0a17-9453-4392-a089-5bd9ad122ff2.jpeg" alt="manicure">
+            <img class="work_image" data-aos="fade-up" src="assets/images/works/legs1.jpeg" alt="manicure">
+            <img class="work_image" data-aos="fade-up" src="assets/images/works/legs2.jpeg" alt="manicure">
 
         </div>
     </section>
@@ -81,7 +86,7 @@
 <!--                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"-->
 <!--                referrerpolicy="no-referrer-when-downgrade"></iframe>-->
 <!--    </section>-->
-    <footer class="footer">
+    <footer class="footer" data-aos="fade-up" data-aoos-anchor-placement="bottom-bottom">
         <img class="footer__logo" src="assets/images/vector/header_logo.svg" alt="headerLogo">
         <div class="contactsInfo">
             <h2>Контакты</h2>
@@ -102,5 +107,9 @@
     </footer>
 </div>
 <script src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
