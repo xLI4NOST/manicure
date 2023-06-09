@@ -1,0 +1,394 @@
+@import url('animate.css');
+.body {
+    background-color: #111111;
+    position: relative;
+}
+
+.headSection {
+    margin-top: 0;
+}
+
+.background-overlay h2 {
+    position: absolute;
+    left: 50%;
+    top: 8%;
+    transform: translateX(-50%);
+    font-family: 'Cormorant Garamond';
+    z-index: 1;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 120%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.burger_menu {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 475px;
+    height: 800px;
+    position: absolute;
+    z-index: 400;
+    right: -50px;
+    top: -30px;
+    background-color: #111111;
+    gap: 60px;
+    transition: 3s ease-in;
+}
+
+.burger_menu_active{
+    display: flex;
+}
+.close_animation{
+    animation: opacityClose 0.7 ease-in;
+}
+
+.open_animation{
+    animation: opacityOpen 0.9s ease-in;
+}
+
+
+.burger_menu img {
+    position: absolute;
+    left: 50px;
+    top: 60px;
+}
+
+.quote {
+    max-width: 315px;
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: #FFFFFF
+}
+
+.contactsInfo {
+    width: 315px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contactsInfo h2 {
+    font-family: 'Garamond Bold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+
+.contactsInfo a {
+    height: 23px;
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #FFFFFF;
+}
+
+.contactsInfo p {
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: #FFFFFF
+}
+
+@media screen and (max-width: 606px) {
+    .burger_menu {
+        width: 250px;
+        height: 600px;
+    }
+
+    .contactsInfo {
+        align-self: start;
+        width: 200px;
+    }
+
+    .contactsInfo p {
+        font-size: 12px;
+    }
+
+    .quote {
+        max-width: 250px;
+        font-size: 12px;
+    }
+
+    .burger_menu img {
+        width: 15px;
+        left: 10px;
+        right: 15px;
+    }
+}
+
+
+@media screen and (max-width: 1390px) {
+    .background-overlay h2 {
+        top: 6%;
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 797px) {
+    .background-overlay h2 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .background-overlay h2 {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .background-overlay h2 {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 379px) {
+    .background-overlay h2{
+        top: 5%;
+    }
+}
+
+.background-overlay img {
+    object-fit: cover;
+}
+
+.wrapper {
+    position: relative;
+    z-index: 3;
+    margin: 0 auto;
+    max-width: 1296px;
+}
+
+.headSection {
+
+}
+
+@media screen and (max-width: 1279px) {
+    .wrapper {
+        max-width: 991px;
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .wrapper {
+        max-width: 768px;
+    }
+}
+
+
+.header {
+    top: 30px;
+    left: 50%;
+    width: 95%;
+    transform: translateX(-50%);
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+@media screen and (max-width: 451px) {
+    .header {
+        height: 50px;
+    }
+}
+
+.header img {
+    max-height: 30px;
+}
+
+.header_instagram {
+    margin-right: 125px;
+}
+
+@media screen and (max-width: 1279px) {
+    .header_instagram {
+        margin-right: 60px;
+    }
+
+}
+
+@media screen and (max-width: 389px) {
+    .header_instagram {
+        margin-right: 20px;
+    }
+}
+
+
+.header__logo {
+    margin-left: 125px;
+}
+
+@media screen and (max-width: 991px) {
+    .header__logo {
+        display: none;
+    }
+}
+
+
+.header__menu {
+    max-width: 50px;
+    max-height: 20px;
+}
+
+.button_block {
+    margin-top: 9px;
+    align-items: start;
+    display: flex;
+}
+
+.button_block span {
+    display: flex;
+    gap: 80px;
+}
+
+@media screen and (max-width: 991px) {
+    .button_block span {
+        gap: 20px;
+    }
+}
+
+
+.button_block img {
+    max-height: 30px;
+}
+
+.button_block button {
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 130%;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 451px) {
+    .button_block button {
+        cursor: pointer;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 355px) {
+    .button_block button {
+        font-size: 12px;
+    }
+}
+
+.textSection {
+    position: relative;
+}
+
+.textSection {
+    display: flex;
+    flex-direction: column;
+    margin: 120px auto;
+    max-width: 856px;
+    max-height: 385px;
+}
+
+.textSection p {
+    margin-top: 20px;
+    align-self: center;
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 130%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 991px) {
+    .textSection p {
+        font-size: 20px;
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 597px) {
+    .textSection p {
+        font-size: 16px;
+        max-width: 300px;
+    }
+
+}
+
+.textSection img {
+    margin: 0 auto;
+}
+
+.worksPlace h2 {
+    margin-bottom: 60px;
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.works {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 24px 24px;
+
+}
+
+.works img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer {
+    padding: 80px 0 80px;
+    margin-top: 100px;
+    border-bottom: 1px solid #FFFFFF;
+    border-top: 1px solid #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 60px;
+}
+
+@media screen and (max-width: 991px) {
+    .footer__logo {
+        display: none;
+    }
+}
+
+
+.iconBlock h2 {
+    margin-bottom: 25px;
+    font-family: 'Garamond Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 410px) {
+    .iconBlock h2 {
+        display: none;
+    }
+}
+
