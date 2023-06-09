@@ -363,11 +363,21 @@
 }
 
 .worksPlace h2 {
-    margin-bottom: 60px;
+    margin-bottom: 10px;
     font-family: 'Cormorant Garamond';
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
+    line-height: 120%;
+    text-align: center;
+    color: #FFFFFF;
+}
+.worksPlace p{
+    margin-bottom: 60px;
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
     line-height: 120%;
     text-align: center;
     color: #FFFFFF;
