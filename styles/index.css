@@ -241,6 +241,7 @@
 }
 
 .header_instagram {
+    cursor: pointer;
     margin-right: 125px;
 }
 
@@ -432,3 +433,6 @@
     }
 }
 
+.iconBlock img {
+    cursor: pointer;
+}
